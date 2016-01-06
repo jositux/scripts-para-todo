@@ -1,0 +1,4 @@
+
+# Convierte archivos flac a wav
+for FILE in *.flac ; do ffmpeg -i "$FILE" -f flac "`basename "$FILE" .flac`.wav" || break; done
+
