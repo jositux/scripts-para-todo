@@ -4,5 +4,5 @@ for FILE in *.flac ; do ffmpeg -i "$FILE" -f flac "`basename "$FILE" .flac`.wav"
 
 
 # Corta video mp4
-ffmpeg -i movie.mp4 -ss 00:00:03 -t 00:00:08 -async 1 -strict -2 cut.mp4
+ffmpeg -i metachaos.mp4 -ss 00:00:25 -t 00:07:20 -c copy out2.mp4
 
