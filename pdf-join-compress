@@ -1,0 +1,9 @@
+ #!/bin/sh
+ 
+pdftk 0.pdf 1.pdf 2.pdf cat output out0.pdf
+ 
+if [ -z $1 ]; then
+  echo "El primer argumento debe ser un archivo pdf."
+else
+  gs -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -dCompatibilityLevel=1.7 -dEmbedAllFonts=true -dDownsampleColorImages=true -dDownsampleGrayImages=true -dDownsampleMonoImages=true -dColorImageResolution=300 -dGrayImageResolution=300 -dMonoImageResolution=300  -sOutputFile=$1_compress.pdf $1
+fi
