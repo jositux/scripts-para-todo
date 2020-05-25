@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<body>
+<table>
+  <tbody>
+    <tr>
+      <td>Cuidados</td>
+      <td>que pasa si nunca has tenido una planta de interior</td>
+      <td>There are many types of tables on websites where content can vary as wildly as the approaches used to make them responsive. The tables I find most frustrating are comparison tables or normal content layout tables, there are really no comprehensive CSS based solutions for making these types of tables responsive.</td>
+     
+    </tr>
+    
+    <tr>
+      <td>Cuidados</td>
+      <td>que pasa si nunca has tenido una planta de interior</td>
+      <td>There are many types of tables on websites where content can vary as wildly as the approaches used to make them responsive. The tables I find most frustrating are comparison tables or normal content layout tables, there are really no comprehensive CSS based solutions for making these types of tables responsive.</td>
+     
+    </tr>
+    
+  </tbody>
+</table>
+
+<style>
+
+table {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+  
+}
+
+table td {
+  padding-top: .625em;
+  vertical-align: top;
+}
+
+table tr td:nth-child(1) {
+  color: #09513f;
+  font-size: 22px;
+  width: 15%;
+}
+
+table tr td:nth-child(2) {
+  color: #222222;
+  font-size: 17px;
+  width: 20%
+}
+
+table tr td:nth-child(3) {
+  color: #777777;
+  font-size: 15px;
+  line-height: 1.73;
+}
+
+@media screen and (max-width: 768px) {
+  table {
+    border: 0;
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+  
+  
+  table tr {
+    display: block;
+  }
+  
+  table td {
+    display: block;
+    width: 100%;
+  }
+  
+  table tr td:nth-child(1),
+  table tr td:nth-child(2),
+  table tr td:nth-child(2) {
+    width: 100%;
+  }
+
+}
+</style>
+</body>
+</html>
